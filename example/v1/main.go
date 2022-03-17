@@ -8,9 +8,12 @@ import (
 
 func main() {
 	path := "/dev/ttyS0"
+
 	m := new(v1.Manage)
 	v, _ := m.GetPorts()
-	fmt.Printf("%+v", v)
+	path = v[0]
+	fmt.Printf("%+v\n", v)
+	fmt.Printf("%+v\n", path)
 	mode := &v1.Mode{
 		BaudRate: 115200,
 	}

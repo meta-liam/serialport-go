@@ -2,6 +2,10 @@ module example
 
 go 1.17
 
+require github.com/meta-liam/serialport-go v1.0.0
+
 require (
-	github.com/meta-liam/serialport-go v1.0.0 // indirect
+	github.com/creack/goselect v0.1.2 // indirect
+	go.bug.st/serial v1.3.5 // indirect
+	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
 )
